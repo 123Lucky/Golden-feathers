@@ -1,0 +1,176 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+.a1 {
+   color:#b4bcc8;
+    text-align: left;
+    height: 30px;
+	border: 1px ;
+	
+
+} 
+.div_hover:hover {
+    background-color: #525E64;
+}
+
+.card {
+ background-color: #FFFFFF;
+    margin-left:35px;
+	margin-top:15px;
+	margin-right:15px;
+    top: 50px;
+    width: 250px;
+    height: 150px;
+	border: 1px ;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);color:#b4bcc8;
+	 transition: transform .2s;
+}
+.card:hover {
+    background-color: #525E64;
+	opacity: 1;
+	transform: scale(1.1);
+}
+.zoom {
+    padding: 50px;
+    background-color: green;
+    /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+</head>
+
+<body style="font-family:Times New Roman, Times, serif;">
+
+
+<nav class="navbar navbar-inverse" style="background-color:#22313F;position: sticky;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);z-index:100;>
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">E-Learning</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!--  side menu -->
+<div style=" position: absolute;
+    top: 50px;
+    left: 0;
+    width: 18%;
+    height: 100%;
+    background-color:#22313F;
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);color:#b4bcc8;font-size: 20px;">
+	
+	<div style=" position: relative;
+	width: 100%;
+    height: 20%; pointer {cursor: pointer;}">
+	<p> </br>
+	<br>
+	<br></br>
+	<br></P>
+	</div>
+	<style>
+	.pointer {cursor: pointer;}
+	</style>
+	<div class="a1 div_hover pointer"  >
+	&nbsp;&nbsp;&nbsp;<i class="fa fa-apple" style="font-size:24px"> &nbsp;&nbsp;&nbsp;Computer Science</i>
+		</div>
+	<div class="a1 div_hover pointer" >
+	&nbsp;&nbsp;&nbsp;<i class="fa fa-cogs" style="font-size:24px">&nbsp;&nbsp;	Mechanical </i>
+	</div>
+	<div class="a1 div_hover pointer" >
+
+&nbsp;&nbsp;&nbsp;<i class="fa fa-flash" style="font-size:24px"> &nbsp;&nbsp;&nbsp;&nbsp;Electrical </i>	
+
+	</div>
+	
+	<div class="a1 div_hover pointer" >
+
+&nbsp;&nbsp;&nbsp;<i class="fa fa-code-fork" style="font-size:24px"> &nbsp;&nbsp;&nbsp;&nbsp;Electronics </i>	
+
+	</div>
+	
+	 <div class="a1 div_hover pointer" >
+
+&nbsp;&nbsp;&nbsp;<i class="fa fa-flask" style="font-size:24px"> &nbsp;&nbsp;&nbsp;Chemical </i>	
+
+	</div>
+   <div class="a1 div_hover pointer" >
+
+&nbsp;&nbsp;&nbsp;<i class="fa fa-buysellads" style="font-size:24px"> &nbsp;&nbsp;&nbsp;Architecture </i>	
+
+	</div>
+  
+</div>
+
+<!-- content page -->
+
+<div class="container" style=" position: absolute;
+    top: 50px;
+    left: 18%;
+    width: 100%;
+    height: 100%;
+    background-color:#E1E5EC;" >
+<div class="row">
+
+<div class="col-sm-3  card"  style="background-color: #578EBE">
+<p>Hover over me to display me as a card!</p>
+</div>
+
+<div class="col-sm-3 card" style="background-color: #F36A5A">
+<p>Hover over me to display me as a card!</p>
+</div>
+
+<div class="col-sm-3  card" style="background-color: #4DB3A2">
+<p>Hover over me to display me as a card!</p>
+</div>
+
+<div class="col-sm-3 card" style="background-color: #8775A7">
+<p>Hover over me to display me as a card!</p>
+</div>
+
+</div>
+<div class
+</div>
+</body>
+</html>
